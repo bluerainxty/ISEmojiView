@@ -136,9 +136,9 @@ extension EmojiCollectionView: UICollectionViewDataSource {
         return emojis.count
     }
     
-    internal func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    internal func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         if section == 0 {
-             return CGSize(width: 1, height: self.collectionView.frame.height - 4)
+            return CGSize(width: 1, height: self.collectionView.frame.height - 4)
         }
         return .zero
     }
