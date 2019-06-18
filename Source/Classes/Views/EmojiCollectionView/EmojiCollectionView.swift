@@ -60,6 +60,7 @@ internal class EmojiCollectionView: UIView {
     @IBOutlet private weak var collectionView: UICollectionView! {
         didSet {
             collectionView.register(EmojiCollectionCell.self, forCellWithReuseIdentifier: "EmojiCollectionCell")
+            collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "UICollectionElementKindSectionFooter")
         }
     }
     
@@ -137,6 +138,12 @@ extension EmojiCollectionView: UICollectionViewDataSource {
     
     internal func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return emojis[section].emojis.count
+    }
+    
+    internal func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let v = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "UICollectionElementKindSectionFooter", for: indexPath)
+        v.backgroundColor = UIColor.lightGray
+        return v
     }
     
     internal func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
