@@ -149,7 +149,7 @@ extension EmojiCollectionView: UICollectionViewDataSource {
     
     internal func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let v = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "UICollectionElementKindSectionFooter", for: indexPath)
-        v.backgroundColor = UIColor.lightGray.withAlphaComponent(0.8)
+        v.backgroundColor = UIColor.lightGray.withAlphaComponent(0.55)
         return v
     }
     
