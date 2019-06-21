@@ -28,14 +28,13 @@
                         <action selector="deleteBackward" destination="iN0-l3-epB" eventType="touchUpInside" id="nuO-7H-GuB"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNK-Po-ZiY">
-                    <rect key="frame" x="315" y="0.0" width="60" height="44"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNK-Po-ZiY">
+                    <rect key="frame" x="323" y="0.0" width="60" height="44"/>
                     <color key="backgroundColor" red="0.99607843139999996" green="0.85882352939999995" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="YRY-0M-KVd"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="发送">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -67,6 +66,7 @@
             <connections>
                 <outlet property="pageControl" destination="p4b-NF-Peo" id="JB7-Ef-Hxa"/>
             </connections>
+            <point key="canvasLocation" x="55.200000000000003" y="48.575712143928037"/>
         </view>
     </objects>
 </document>
