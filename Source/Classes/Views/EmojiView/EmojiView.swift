@@ -16,7 +16,7 @@ public protocol EmojiViewDelegate: class {
     func emojiViewDidSelectEmoji(_ emoji: String, emojiView: EmojiView)
     func emojiViewDidPressChangeKeyboardButton(_ emojiView: EmojiView)
     func emojiViewDidPressDeleteBackwardButton(_ emojiView: EmojiView)
-    func emojiViewDidPressDismissKeyboardButton(_ emojiView: EmojiView)
+    func emojiViewDidPressSendButton(_ emojiView: EmojiView)
     
 }
 
@@ -24,7 +24,7 @@ public extension EmojiViewDelegate {
     
     func emojiViewDidPressChangeKeyboardButton(_ emojiView: EmojiView) {}
     func emojiViewDidPressDeleteBackwardButton(_ emojiView: EmojiView) {}
-    func emojiViewDidPressDismissKeyboardButton(_ emojiView: EmojiView) {}
+    func emojiViewDidPressSendButton(_ emojiView: EmojiView) {}
     
 }
 
@@ -186,8 +186,8 @@ extension EmojiView: PageControlBottomViewDelegate {
         delegate?.emojiViewDidPressDeleteBackwardButton(self)
     }
     
-    func pageControlBottomViewDidPressDismissKeyboardButton(_ bottomView: PageControlBottomView) {
-        delegate?.emojiViewDidPressDismissKeyboardButton(self)
+    func pageControlBottomViewDidPressSendButton(_ bottomView: PageControlBottomView) {
+        delegate?.emojiViewDidPressSendButton(self)
     }
     
 }

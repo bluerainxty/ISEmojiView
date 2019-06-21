@@ -10,7 +10,7 @@ import Foundation
 internal protocol PageControlBottomViewDelegate: class {
     
     func pageControlBottomViewDidPressDeleteBackwardButton(_ bottomView: PageControlBottomView)
-    func pageControlBottomViewDidPressDismissKeyboardButton(_ bottomView: PageControlBottomView)
+    func pageControlBottomViewDidPressSendButton(_ bottomView: PageControlBottomView)
     
 }
 
@@ -53,8 +53,8 @@ final internal class PageControlBottomView: UIView {
         delegate?.pageControlBottomViewDidPressDeleteBackwardButton(self)
     }
     
-    @IBAction private func dismissKeyboard() {
-        delegate?.pageControlBottomViewDidPressDismissKeyboardButton(self)
+    @IBAction private func sendButtonClick() {
+        delegate?.pageControlBottomViewDidPressSendButton(self)
     }
     
 }
