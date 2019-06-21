@@ -39,7 +39,7 @@
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
-                        <action selector="sendButtonClick" destination="iN0-l3-epB" eventType="touchUpOutside" id="CG5-IV-yav"/>
+                        <action selector="sendButtonClick" destination="iN0-l3-epB" eventType="touchUpInside" id="Bh4-0U-10R"/>
                     </connections>
                 </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="p4b-NF-Peo">

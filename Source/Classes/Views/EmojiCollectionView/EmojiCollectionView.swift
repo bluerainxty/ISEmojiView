@@ -205,7 +205,7 @@ extension EmojiCollectionView: UICollectionViewDelegate {
 extension EmojiCollectionView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        var inset = UIEdgeInsets.zero
+        var inset = UIEdgeInsets.init(top: 4, left: 0, bottom: 4, right: 0)
         
         if let recentsEmojis = emojis.first(where: { $0.category == Category.recents }) {
             if (!recentsEmojis.emojis.isEmpty && section != 0) || (recentsEmojis.emojis.isEmpty && section > 1) {
