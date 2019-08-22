@@ -20,7 +20,9 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="F7t-Dr-hnG"/>
                     </constraints>
-                    <state key="normal" title="⌫"/>
+                    <state key="normal" title="⌫">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="deleteBackward" destination="iN0-l3-epB" eventType="touchUpInside" id="nuO-7H-GuB"/>
                     </connections>
